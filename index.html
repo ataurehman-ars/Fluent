@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler</title>
+</head>
+<style>
+    
+    body {
+        padding: 0;
+        display: block;
+        box-sizing: border-box;
+        background  : #fff;
+        position: relative;
+    }
+    #source-code {
+        display: block;
+        width: 95vw;
+        height: 80vh;
+        background:  #fff;
+        color: cornflowerblue;
+        font-family: monospace;
+        font-size: calc(16px + 1vh);
+        box-shadow:  1px 1px 10px gray;
+        border: none;
+        border-radius: 5px;
+        margin: 0 auto;
+        outline: none;
+        padding: 2vh 0;
+        box-sizing: border-box;
+    }
+
+    #compile {
+        display: block;
+        border: none;
+        padding: 1vh 2vw;
+        background: green;
+        color: white;
+        box-shadow: 1px 1px 5px #000;
+        border-radius: 5px;
+        font-size: calc(16px + 1vh);
+        margin: 2vh auto;
+        outline: none;
+        cursor: pointer;
+        transition : .5s ease-in-out
+    }
+
+    #compile:hover {
+        background: #fff;
+        color: green;
+    }  
+    
+</style>
+<body>
+    <textarea id = "source-code"></textarea>
+    <button id = "compile" >Compile</button>
+    <script type = "module" src = "js/read.js"></script>
+</body>
+</html>
+
+
+
+
